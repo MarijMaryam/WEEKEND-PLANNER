@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>WeekendFlow - Personalized Weekend Planner</title>
+    <meta name="description" content="Plan amazing weekends with personalized activity suggestions, collaborative itinerary building, and seamless sharing.">
+    <meta name="keywords" content="weekend planner, activity discovery, itinerary builder, collaboration, events, restaurants">
+    
+    <meta property="og:title" content="WeekendFlow - Personalized Weekend Planner">
+    <meta property="og:description" content="Plan amazing weekends with personalized activity suggestions, collaborative itinerary building, and seamless sharing.">
+    
+    <meta name="twitter:title" content="WeekendFlow - Personalized Weekend Planner">
+    <meta name="twitter:description" content="Plan amazing weekends with personalized activity suggestions, collaborative itinerary building, and seamless sharing.">
+
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react@18/umd/react.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://resource.trickle.so/vendor_lib/unpkg/lucide-static@0.516.0/font/lucide.css" rel="stylesheet">
+
+    <style type="text/tailwindcss">
+    @layer components {
+        .btn-primary {
+            @apply bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors font-medium;
+        }
+        
+        .btn-secondary {
+            @apply bg-gray-100 text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-200 transition-colors font-medium;
+        }
+        
+        .card {
+            @apply bg-white rounded-xl shadow-sm border border-gray-100 p-4;
+        }
+        
+        .activity-card {
+            @apply bg-white rounded-lg border border-gray-200 p-4 hover:shadow-md transition-shadow cursor-pointer;
+        }
+        
+        .category-badge {
+            @apply inline-block px-3 py-1 text-xs font-medium rounded-full;
+        }
+    }
+    </style>
+
+    <div id="root"></div>
+    
+    <script type="text/babel" src="components/Header.js"></script>
+    <script type="text/babel" src="components/ActivityCard.js"></script>
+    <script type="text/babel" src="components/ActivitySearch.js"></script>
+    <script type="text/babel" src="components/PlanBuilder.js"></script>
+    <script type="text/babel" src="components/PlanItem.js"></script>
+    <script type="text/babel" src="components/Wishlist.js"></script>
+    <script type="text/babel" src="utils/auth.js"></script>
+    <script type="text/babel" src="utils/database.js"></script>
+    <script type="text/babel" src="app.js"></script>
+</head>
+<body>
+</body>
+</html>
